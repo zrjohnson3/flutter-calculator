@@ -98,8 +98,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: SingleChildScrollView(
-          // Prevents pixel overflow
+        child: SingleChildScrollView( // Prevents pixel overflow
           child: Column(
             children: [
               const SizedBox(height: 30),
@@ -164,11 +163,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     // Apple-style color scheme
     if (value == 'C' || value == '±' || value == '%' || value == 'x²') {
       buttonColor = Colors.grey[700]!; // Light gray for function buttons
-    } else if (value == '÷' ||
-        value == '×' ||
-        value == '-' ||
-        value == '+' ||
-        value == '=') {
+    } else if (value == '÷' || value == '×' || value == '-' || value == '+' || value == '=') {
       buttonColor = Colors.orange; // Orange for operator buttons
     } else {
       buttonColor = Colors.grey[850]!; // Dark gray for number buttons
@@ -188,11 +183,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             } else if (value == '±') {
               _toggleSign();
             } else {
-              _addToExpression(value == '×'
-                  ? '*'
-                  : value == '÷'
-                      ? '/'
-                      : value);
+              _addToExpression(value == '×' ? '*' : value == '÷' ? '/' : value);
             }
           },
           style: ElevatedButton.styleFrom(
