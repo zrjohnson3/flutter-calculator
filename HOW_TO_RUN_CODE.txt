@@ -1,0 +1,7 @@
+I was unable to run code after reguarly cloning the project, even tho it runs fine in the previous project. 
+
+I saw on discord Joe D said that we need to move the preojct outside of the new folder that was created when initilzing and pushing to the github repo
+
+After moving the project outisde of the flutter-calculator folder, my project ran fine again. 
+
+This was an interesting bug. I was not able to get the terminal to regonize that the files were there. 
